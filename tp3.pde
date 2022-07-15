@@ -1,6 +1,8 @@
 //ACEDO, JORGELINA ANDREA 91365/0 - GUANUCO, MORENA 91431/1  
 //LINK: https://www.youtube.com/watch?v=Kf2Z7s_e3-o
 int escenario =0;
+int posY=500;
+int [] posX=new int[9];
 boolean perdiste=false;
 boolean ganaste=false;
 boolean empezar=false;
@@ -8,7 +10,8 @@ boolean instrucciones=false;
 boolean creditos=false;
 PFont fuente;
 color negro, negroo, negrooo;
-int posY=500;
+
+
 void setup() {
   size(400, 400);
   fuente=createFont("Maze.ttf", 40);
@@ -17,6 +20,15 @@ void setup() {
   negroo=color(0);
   negrooo=color(0);
   noStroke();
+  posX[0]=40;
+  posX[1]=60;
+  posX[2]=94;
+  posX[3]=210;
+  posX[4]=155;
+  posX[5]=257;
+  posX[6]=267;
+  posX[7]=327;
+  posX[8]=376;
 }
 
 void draw() {

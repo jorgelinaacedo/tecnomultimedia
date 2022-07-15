@@ -70,19 +70,7 @@ void juego() {
   background(#0F5364);
   fill(255, 0, 0);
   circle(mouseX, mouseY, 20);
-  fill(#0A3B48);
-  rect (40, 30, 20, 400);//si
-  rect(60, 30, 50, 20);//si
-  rect(94, 30, 20, 360);//si
-  rect(94, 374, 120, 20);//si
-  rect(210, 30, 20, 364);//si
-  rect(155, 0, 20, 340);//si
-  rect(210, 30, 50, 20);//si
-  rect(257, 30, 20, 364);//si
-  rect(267, 374, 130, 20);//si
-  rect(327, 0, 20, 340);
-  fill(255, 255, 0);
-  circle(376, 20, 30);
+  laberinto(#0A3B48);
 
   if (perdiste==true) {
     escenario=3;
@@ -90,6 +78,22 @@ void juego() {
   if (ganaste==true) {
     escenario=4;
   }
+}
+
+void laberinto(int azul){
+  fill(azul);
+  rect (posX[0], 30, 20, 400);//si
+  rect(posX[1], 30, 50, 20);//si
+  rect(posX[2], 30, 20, 360);//si
+  rect(posX[2], 374, 120, 20);//si
+  rect(posX[3], 30, 20, 364);//si
+  rect(posX[4], 0, 20, 340);//si
+  rect(posX[3], 30, 50, 20);//si
+  rect(posX[5], 30, 20, 364);//si
+  rect(posX[6], 374, 130, 20);//si
+  rect(posX[7], 0, 20, 340);
+  fill(255, 255, 0);
+  circle(posX[8], 20, 30);
 }
 
 void perdiste() {
@@ -123,7 +127,7 @@ void creditos() {
   background (0);
   fill(255);
   textFont(fuente, 40);
-  text("INSPIRACION \n SCARY MAZE \n AUTOR DEL ORIGINAL \n JEREMY WINTERROWD \n AUTORA DE LA VERSION \n JORGELINA ACEDO \n PROGRAMA \n PROCESSING 3.5.4", 200, posY);
+  text("INSPIRACION \n SCARY MAZE \n AUTOR DEL ORIGINAL \n JEREMY WINTERROWD \n AUTORAS DE LA VERSION \n JORGELINA ACEDO \n MORENA GUANUCO \n PROGRAMA \n PROCESSING 3.5.4", 200, posY);
   posY--;
 }
 
