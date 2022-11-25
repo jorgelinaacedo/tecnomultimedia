@@ -117,11 +117,12 @@ class Juego {
         s = second();
         contador++;
       }
+      /*
       pushStyle();
       fill(255, 0, 0);
       circle(puccaColeccion[e].posX, puccaColeccion[e].posY, 20);
       circle(garu.x, garu.y, 20);
-      popStyle();
+      popStyle();*/
     }
     for (int i=0; i<puccaColeccion.length; i++) { 
       if (puccaColeccion[i].posY>height) {
