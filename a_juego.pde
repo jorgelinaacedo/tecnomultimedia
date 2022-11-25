@@ -135,6 +135,7 @@ class Juego {
       perder();
     }
     contador();
+    // text("CONTADOR: " + contador, 520,80);
   }
   void contador() {
     text(20 - segundos, 80, 80);
